@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Team Vanity</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <font color="pink"><h1>Team Vanity</h1></font>
+        </div>
+        <div id="output"></div>
+    </body>
+    <script>
+        console.log(process);
+        let output = `
+            <h2>All information about the faction</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Current Ip We Are Playing On: {Work In Progress}</li>
+                <li class="list-group-item">Discord Where We Are Playing: <a href="https://discord.gg/bAh9jJK">discord.gg/TeamVanity</a></li>
+            </ul>
+        `
+
+        document.getElementById('output').innerHTML = output;
+    </script>
+    <script>
+        require('./renderer.js');
+    </script>
+</html>
